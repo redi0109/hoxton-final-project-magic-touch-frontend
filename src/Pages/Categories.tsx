@@ -11,6 +11,7 @@ export function Categories({ currentUser }: Props) {
 
   const [categories, setCategories] = useState<Category[]>([]);
   const [categoryProducts, setCategoryProducts] = useState<Product[]>([]);
+  
   function getDatafromServer() {
     fetch("http://localhost:5000/categories")
       .then((resp) => resp.json())

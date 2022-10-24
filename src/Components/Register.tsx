@@ -1,12 +1,15 @@
 import { Data } from "../types";
 import { Button } from "@mui/material";
+import { useState } from "react";
 
 type Props = {
   signIn: (data: Data) => void;
-  setError: React.Dispatch<React.SetStateAction<string[] | null>>;
-  error: string[] | null;
-};
-export function Register({ signIn, setError, error }: Props) {
+}
+
+
+
+export function Register({ signIn, }: Props) {
+  const [signUpError, setSignUpError] = useState<null | Array<string>>(null);
   return (
     <div className="form-page">
       <form
@@ -27,7 +30,7 @@ export function Register({ signIn, setError, error }: Props) {
             .then((resp) => resp.json())
             .then((data) => {
               if (data.errors) {
-                setError(data.errors);
+                setSignUpError(data.errors);
               } else {
                 signIn(data);
               }
@@ -62,7 +65,7 @@ export function Register({ signIn, setError, error }: Props) {
             placeholder="Password"
           />
         </label>
-        {error ? <p className="error">{error}</p> : null}
+        {signUpError ? <p className="error">{signUpError}</p> : null}
 
         <Button variant="contained" size="small" type="submit">
           Register
