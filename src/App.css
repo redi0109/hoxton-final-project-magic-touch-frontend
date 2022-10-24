@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+.App a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header a {
+  text-decoration: none;
+  color: rgba(63, 63, 63, 0.96);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.header a:hover {
+  color: #d42e2e;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -25,7 +41,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
@@ -39,4 +55,205 @@
 
 button {
   font-size: calc(10px + 2vmin);
+}
+
+.homeMain {
+  height: 80vh;
+  background-image: url(https://imgs.search.brave.com/93KTt9Yi7fJnrh5v5cDnQNRsR-xnHsESnJr2JbUgeGg/rs:fit:1000:563:1/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MjAzNDAzNTY1ODQt/Zjk5MTdkMWVlYTZm/P2l4bGliPXJiLTEu/Mi4xJml4aWQ9ZXlK/aGNIQmZhV1FpT2pF/eU1EZDkmdz0xMDAw/JnE9ODA);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.leftSide {
+  color: #000000;
+  font-size: xx-large;
+
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 1.5px;
+}
+
+.rightSide {
+  color: #000000;
+  font-size: xxx-large;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 1.5px;
+}
+
+.aboutMain {
+  height: 100%;
+  background-color: #000000;
+  display: grid;
+  grid-auto-flow: row;
+  color: aliceblue;
+  padding: 2rem 15rem;
+}
+
+.fisrtSection {
+  padding: 1rem;
+}
+
+.fisrtSection h1 {
+  color: rgb(249, 145, 9);
+}
+
+.fisrtSection p {
+  color: rgb(212, 164, 101);
+}
+
+.secondSection {
+  padding: 1rem;
+}
+
+.secondSection h1 {
+  color: rgb(113, 249, 9);
+}
+
+.secondSection p {
+  color: rgb(82, 131, 44);
+}
+
+.leftSection {
+  font-size: xx-large;
+}
+
+.rightsection {
+  font-size: xx-large;
+}
+
+.categories-products {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: auto auto auto;
+  align-items: flex-start;
+}
+
+.shop {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto;
+  place-items: center;
+  padding: 1.5rem 5rem;
+  background-color: #d1cccc;
+}
+
+.product-name {
+  color: #3f3c3c;
+}
+
+.shop-page {
+  background-color: #d1cccc;
+}
+
+.product-img {
+  width: 18rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-img:hover {
+  width: 18.5rem;
+}
+
+.title {
+  color: #3f3c3c;
+}
+
+.brands-products {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: auto auto auto;
+  align-items: flex-start;
+}
+
+.brands {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto;
+  place-items: center;
+  padding: 1.5rem 5rem;
+  background-color: #d1cccc;
+}
+
+.product-name {
+  color: #3f3c3c;
+}
+
+.brands-page {
+  background-color: #d1cccc;
+}
+
+.singleProduct {
+  /* background-color: red; */
+  height: 91vh;
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+  background-color: rgba(128, 128, 128, 0.097);
+}
+.singleProduct__details {
+  display: grid;
+  grid-template-columns: auto 500px;
+  gap: 1rem;
+}
+
+.add-to-cart-btn {
+  width: 150px;
+  height: 40px;
+}
+select {
+  width: 40px;
+}
+
+.form-page {
+  text-align: center;
+
+  display: grid;
+  height: 92vh;
+  place-content: center;
+  background-image: url(https://rrcustoms.com/wp-content/uploads/2022/07/wheel-cleaner-neon-bad-boys-rrcustoms-detailing-premium-cosmetics-083.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+.form {
+  display: grid;
+  gap: 1rem;
+  justify-content: left;
+  padding: 2rem;
+  border: 1px solid #0c0c0c;
+  border-radius: 10px;
+  backdrop-filter: sepia(50%);
+}
+.form-title {
+  font-size: 1.2rem;
+}
+label {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 0.5rem;
+  text-align: left;
+}
+.text-input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid rgb(129, 11, 11);
+  transition: 0.5s;
+
+  outline: none;
+}
+.text-input:focus {
+  border: 2px solid #700606;
+}
+button {
+  all: unset;
+}
+.error {
+  color: rgb(191, 0, 0);
 }

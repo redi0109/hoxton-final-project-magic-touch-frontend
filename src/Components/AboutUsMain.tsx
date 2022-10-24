@@ -1,0 +1,12 @@
+export function AboutUsMain(){
+    return(
+        <div className="aboutMain">
+            <div className="fisrtSection"><h1>A1A CarWash History</h1>
+            <p>We are a producer of high quality detailing products… although it was supposed to be different, let’s start from the beginning. Rafał, the owner and creator of RRCustoms, would never have thought when creating his company that he would be a producer, and that he would produce high-quality detailing chemicals. The beginnings starts at 2000, when the adventure with the automotive industry began. The first years were visual tuning of vehicles, both cars and motorcycles, large projects like vehicle rebuilding and restoration, custom car painting, etc. We got interested in the subject of wrapping and detailing during long-term trainings in Great Britain. After about 10 years adventure with the automotive industry, the topic of detailing is getting more into the world of RRCustoms. The following years are transformatting the company towards wrapping and car cosmetics. Continuous brand development, searching for better products for detailing, resulted in cooperation with an independent chemical laboratory, hiring chemists and starting work on our own detailing products. In 2016 the first RRCustoms car cosmetics were created, which were enthusiastically received by market. It gave us the motivation to continue working on new products at the same time focused our activity on production. At the moment, we offer over 50 detailing products, we are present on 3 continents in dozens of countries. Our laboratory is supported by two independent research institutes, which made us improve and create new products.</p>
+            </div>
+            <div className="secondSection"><h1>Training Center</h1>
+            <p>The popularity of our brand resulted in a large number of inquiries about training. This motivated us to start training cycles in the field of detailing, tinting and wrapping. Year 2015 is the official date of commencement of the RRCustoms training center. After 7 years of existence, our training center has educated hundreds, if not thousands of people, a large group of them thanks to us, is successfully runing their own business and even their own training centers. Training we run individually or in small groups to provide the maximum amount of knowledge. An important feature of our training is their intensity, we are using our training time to the maximum to pass as much knowledge as possible to our students.</p>
+            </div>
+        </div>
+    )
+}
